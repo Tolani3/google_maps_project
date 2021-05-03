@@ -1,0 +1,63 @@
+#map {
+      height: 100%;
+     }
+     
+     #mapDiv {
+      width: 200px;
+      height: 100px;
+      border: thin solid black;
+      overflow: visible !important;
+      position: static !important;
+      float: right;
+     }
+     
+     .sideNav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+     }
+     
+     .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+     }
+     
+     .sideNav {
+      visibility: visible;
+     }
+     
+     .services_image {
+      height: 200px;
+      width: 350px;
+     }
+     
+     .checked {
+      color: orange;
+     }
+     
+     #infoWindow {
+      width: 550px;
+     }
+     #pac_input {
+      visibility: visible !important;
+     }
+     
+     .button:not(.icon-button) {
+      text-decoration: none;
+     }
+     
+     .places_image {
+      height: 200px;
+      width: 200px;
+     }
+     
+     .address
+     {
+           font-weight:bold;
+           font-size: large;
+     }

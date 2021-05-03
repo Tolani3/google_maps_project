@@ -1,0 +1,78 @@
+.button__icon {
+  width: 2em;
+  height: 2em;
+  fill: currentcolor;
+  margin-right: 0.5em;
+
+  &--end {
+    margin-right: 0;
+    margin-left: 0.5em;
+  }
+}
+
+// Due to the cascade, find .icon-button after the .button
+
+// Base button styles
+.button {
+  // Reset
+  text-decoration: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+
+  // Display
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  // Optional - see "Gotchas"
+  align-self: start;
+
+  // Visual
+  font-size: 1rem;
+  background-color: $red;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  margin-bottom: 5px;
+
+  // Size
+  &:not(.icon-button) {
+    padding: 0.25em 0.75em;
+    min-width: 15ch;
+    min-height: 44px;
+    
+  }
+
+  // Text
+  text-align: center;
+  line-height: 1.1;
+
+  transition: 220ms all ease-in-out;
+
+  &:hover,
+  &:active {
+    background-color: color($red);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px color($red);
+  }
+
+  &--small {
+    font-size: 1rem;
+  }
+}
+
+.icon-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  padding: 0.35em;
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+  }
+}
